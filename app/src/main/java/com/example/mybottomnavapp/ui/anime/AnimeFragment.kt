@@ -47,6 +47,7 @@ class AnimeFragment : Fragment() {
                 tvAnime.text = result.data?.titleEnglish ?: result.data?.title
                 tvEpisodeValue.text = result.data?.episodes.toString()
                 tvGenreValue.text = result.data?.genres?.joinToString("-", "#")
+                tvRatingValue.text = result.data?.rating.toString()
             }
 
             Glide
